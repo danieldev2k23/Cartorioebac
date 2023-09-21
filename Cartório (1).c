@@ -103,8 +103,7 @@ int deletar()
     if(file == NULL)
     {
     	printf("O usuário não se encontra no sistema!.\n");
-    	system("pause");
-    	
+    	system("pause");	
 	}
     	
 }
@@ -137,19 +136,25 @@ int main()
 	    case 1:
 	    registro();//chamada de funções
         break;
-        
+         
         case 2:
-		consulta();
+	    consulta();
 	    break;
-	    
-		case 3:
-		deletar();
-		break;
-		 
-		default:
-		printf("Essa opção não está disponível!\n");
-		 system("pause");
-		 break; 
+  	   
+	    case 3:
+	    deletar();
+	    break;
+ 	
+	    case 4:
+    	printf("Obrigado por utilizar o sistema!\n");
+	    return 0;
+	    break; 
+	  
+	    default:
+	    printf("Essa opção não está disponível!\n");
+	    system("pause");
+	    break; 
+	
 	}//fim da seleção
 	
 	}
